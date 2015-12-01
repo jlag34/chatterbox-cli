@@ -13,7 +13,8 @@ var Messages = Backbone.Collection.extend({
   // url: 'https://api.parse.com/1/classes/chatterbox/',
 
   loadMsgs: function(){
-    this.fetch({data: { order: '-createdAt' }});
+    // this.fetch({dataType: 'jsonp', data: { order: '-createdAt' }});
+    this.fetch();
   },
 
   parse: function(response, options){
